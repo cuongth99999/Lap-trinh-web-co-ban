@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 b</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+        hr {
+            width: 50vw;
+            margin: 20px auto;
+        }
+
+        .box1 {
+            margin: 20px 0;
+        }
+        .box1 .list_checkbox {
+            display: flex;
+        }
+        .box1 .check_left {
+            width: 100%;
+            padding-left: 118px;
+        }
+        .box1 .check_right {
+            width: 100%;
+        }
+        .box1 .comment {
+            display: block;
+            margin: 20px 104px 10px;
+        }
+
+        .box2 {
+            display: flex;
+        }
+        .box2-left {
+            height: 100px;
+            width: 100%;
+            padding-left: 4px;
+            float: left;
+        }
+        .box2 .label {
+            display: inline-block;
+            min-width: 200px;
+            margin: 5px 0;
+        }
+        .box2-right {
+            height: 100px;
+            width: 100%;
+        }
+        .box2 .box2-right img {
+            width: 12%;
+        }
+
+        .submit {
+            float: right;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>KHẢO SÁT Ý KIẾN</h1>
+    <p>v/v: Các kỹ năng cần có đối với sinh viên để thành công trong công việc</p>
+    <hr>
+    <h4>Theo bạn kỹ năng nào là cần thiết đối với bạn trong số các kỹ năng sau:</h4>
+    <form action="success.html">
+        <fieldset class="box1">
+            <legend>Kỹ năng mềm cần có</legend>
+            <div class="list_checkbox">
+                <div class="check_left">
+                    <input type="checkbox">Kỹ năng đặt mục tiêu <br>
+                    <input type="checkbox">Sáng tạo trong công việc <br>
+                    <input type="checkbox">Biết lắng nghe và học tập những lời phê bình <br>
+                    <input type="checkbox">Giao tiếp hiệu quả <br>
+                    <input type="checkbox">Tự tin, năng động và biết lôi kéo người khác <br>
+                </div>
+                <div class="check_right">
+                    <input type="checkbox">Kỹ năng làm việc đồng đội <br>
+                    <input type="checkbox">Kỹ năng khám phá và lãnh đại bản thân <br>
+                    <input type="checkbox">Kỹ năng tổ chức công việc và quản lí thời gian <br>
+                    <input type="checkbox">Kỹ năng ra quyết định <br>
+                    <input type="checkbox">Kỹ năng giải quyết vấn đề <br>
+                </div>
+            </div>
+            <div class="comment">
+                Ý kiến khác: <textarea name="text" cols="110" rows="3" placeholder=""></textarea>
+            </div>
+        </fieldset>
+    
+        <fieldset class="box2">
+            <legend>Thông tin cá nhân</legend>
+            <div class="box2-left">
+                <label class="label" for="">Họ và Tên:</label><input type="text" placeholder="Nhập họ và tên" name="" id=""><br>
+                <label class="label" for="">Độ tuổi: </label><input type="number" value="18" min="18" max="24"><br>
+                <label class="label" for="">Giới tính:</label><input type="radio" name="gender"> <label for="">Nam</label><input type="radio" name="gender"><label for="">Nữ</label>
+            </div>
+            <div class="box2-right">
+                <img src="assets/img/img-success-graph.jpg" alt="anh-success-graph">
+            </div>
+        </fieldset>
+        <div class="submit">
+            <input type="reset" value="Làm lại">
+            <input type="submit" value="Gửi khảo sát">
+        </div>
+    </form>
+    <p>Cảm ơn bạn đã tham gia khảo sát!</p>
+</body>
+</html>
